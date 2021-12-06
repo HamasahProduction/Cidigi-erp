@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+        <!-- Custom Style -->
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <style>
+            :root {
+                --body-bg: rgb(204, 204, 204);
+                --white: #ffffff;
+                --darkWhite: #ccc;
+                --black: #000000;
+                --dark: #615c60;
+                --themeColor: #22b8d1;
+                --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+            }
+
+            /* Font Include */
+            @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
+
+            body {
+                background-color: var(--body-bg);
+            }
+
+            .page {
+                background: var(--white);
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                box-shadow: var(--pageShadow);
+            }
+
+            .page[size="A4"] {
+                width: 21cm;
+                height: 29.7cm;
+                overflow: hidden;
+            }
+
+            .bb {
+                border-bottom: 3px solid var(--darkWhite);
+            }
+
+            /* Top Section */
+            .top-content {
+                padding-bottom: 15px;
+            }
+
+            .logo img {
+                height: 60px;
+            }
+
+            .top-left p {
+                margin: 0;
+            }
+
+            .top-left .graphic-path {
+                height: 40px;
+                position: relative;
+            }
+
+            .top-left .graphic-path::before {
+                content: "";
+                height: 20px;
+                background-color: var(--dark);
+                position: absolute;
+                left: 15px;
+                right: 0;
+                top: -15px;
+                z-index: 2;
+            }
+
+            .top-left .graphic-path::after {
+                content: "";
+                height: 22px;
+                width: 17px;
+                background: var(--black);
+                position: absolute;
+                top: -13px;
+                left: 6px;
+                transform: rotate(45deg);
+            }
+
+            /* User Store Section */
+            .store-user {
+                padding-bottom: 20px;
+            }
+
+            .store-user p {
+                margin: 0;
+                font-size: 15px;
+
+                /* font-weight: 400; */
+            }
+
+            .store-user .address {
+                /* font-weight: 400; */
+                font-size: 15px;
+            }
+
+            .store-user h2 {
+                color: var(--themeColor);
+                font-family: "Rajdhani", sans-serif;
+            }
+
+            .extra-info p span {
+                font-weight: 400;
+            }
+
+            .Header-konten,
+            .tabel-header,
+            thead {
+                border: 1px solid;
+                width: 100%;
+                border: 1px solid;
+                vertical-align: middle;
+            }
+            .header,
+            td {
+                border: 1px solid;
+                text-align: center;
+            }
+            .Header-konten,
+            td,
+            tr {
+                text-align: center;
+                border: 1px solid;
+            }
+            .spasi {
+                width: 100%;
+                border: 1px solid;
+                height: 10px;
+            }
+            .list-purchase {
+                width: 100%;
+                border: 1px solid;
+            }
+            .list-purchase,
+            thead,
+            tr {
+                border: 1px solid;
+            }
+
+            .CVNPWP {
+                padding-left: 0;
+                font-weight: 500;
+            }
+        </style>
+
+        <title>Purchase Order</title>
+    </head>
+
+    <body>
+        <div class="my-5 page" size="A4">
+            <div class="p-4">
+                <section class="store-user mt-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-7">
+                                <h3>CV. YOSO MEKATAMA</h3>
+                                <p class="address">
+                                    Ruko Villa Mutiara Cikarang <br />
+                                    Blok R2 No. 16 & 17 Ciantara<br />
+                                    Cikarang Selatan - Bekasi
+                                </p>
+                                <div class="txn mt-1">
+                                    <p>Telp : 021 89901168</p>
+                                    <p>Fax : 021 89901168</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <h3>Purchase Order</h3>
+                                <p class="address">
+                                    PO Date : 2 Desember 2021 <br />
+                                    PO Number : YM-CM/2021-001 <br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row extra-info pt-3">
+                            <div class="col-7">
+                                <p>
+                                    Vendor :
+                                    <span>PT. CIDIGI MULTI INOVASI</span>
+                                    <br />
+                                    <span
+                                        >Jl. Dr. Cipto Mangun Kusumo B23 No
+                                        66</span
+                                    >
+                                    <br />
+                                    <span
+                                        >Ruko Cortez Simpangan, Cikarang
+                                        Utara</span
+                                    >
+                                </p>
+                                <br />
+                                <p>UP : Bapak Anang</p>
+                                <p>Telp/ Fax : 081227777597</p>
+                            </div>
+                            <div class="col-5">
+                                <p>
+                                    Ship To:
+                                    <span>Ruko Villa Mutiara Cikarang</span>
+                                    <br />
+                                    <span>Blok R2 No. 16 & 17, Ciantara</span>
+                                    <br />
+                                    <span>Cikarang Selatan Bekasi</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Header-konten">
+                    <table class="tabel-header">
+                        <thead>
+                            <tr class="header">
+                                <td style="width: 269px">Terms</td>
+                                <td colspan="3">Expected Date</td>
+                                <td style="width: 141px">Remark's</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="3">Immediately</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <table class="spasi">
+                        <thead>
+                            <td class="spasi"></td>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <table class="list-purchase">
+                        <thead>
+                            <tr>
+                                <td>No</td>
+                                <td>Description</td>
+                                <td>Qty</td>
+                                <td>Item</td>
+                                <td>Unit Price</td>
+                                <td>Discount</td>
+                                <td>Amount</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>Rp. 2.500.000</td>
+                                <td>10%</td>
+                                <td>Rp.2.250.000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>Rp. 2.500.000</td>
+                                <td>10%</td>
+                                <td>Rp.2.250.000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>Rp. 2.500.000</td>
+                                <td>10%</td>
+                                <td>Rp.2.250.000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>Rp. 2.500.000</td>
+                                <td>10%</td>
+                                <td>Rp.2.250.000</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>Rp. 2.500.000</td>
+                                <td>10%</td>
+                                <td>Rp.2.250.000</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    colspan="6"
+                                    class="pr-5"
+                                    style="text-align: right"
+                                >
+                                    Sub Total
+                                </td>
+                                <td style="background-color: gold">
+                                    Rp. 2.250.000
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section><br /></section>
+
+                <section class="pt-3">
+                    <div class="row">
+                        <div class="col-12 CVNPWP" style="text-align: left">
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-4">Name</div>
+                                    <div>:</div>
+                                    <div class="col-6">CV. YOSO MEKATAMA</div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-4">NPWP Number</div>
+                                    <div>:</div>
+                                    <div class="col-6">
+                                        02.422.960.1-413.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-4">NPWP Address</div>
+                                    <div>:</div>
+                                    <div class="col-6">
+                                        Ruko Villa Mutiara Blok R2 No 17
+                                        Ciantara Cikarang Selatan Bekasi
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <br />
+                    <br />
+                </section>
+                <section class="pt-3">
+                    <div class="row pt-10" style="font-weight: 500">
+                        <div class="col-4" style="text-align: center">
+                            <div class="col-12 mb-10">
+                                <p>Supplier Approved</p>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-12 mt-10">
+                                <p>(....................................)</p>
+                            </div>
+                        </div>
+                        <div class="col-4" style="text-align: center">
+                            <div class="col-12 mb-10"><p>Prepared By,</p></div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-12 mt-10">
+                                <p style="text-decoration: underline">
+                                    Tri Wijayanti
+                                </p>
+                                Purchasing
+                            </div>
+                        </div>
+                        <div class="col-4" style="text-align: center">
+                            <div class="col-12 mb-10">
+                                <p>Approved By</p>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-12 mt-10">
+                                <p style="text-decoration: underline">
+                                    Slamet Widada
+                                </p>
+                                Direktur
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

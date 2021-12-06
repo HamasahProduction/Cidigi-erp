@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+
+        <title>Surat Jalan</title>
+
+        <style>
+            :root {
+                --body-bg: rgb(204, 204, 204);
+                --white: #ffffff;
+                --darkWhite: #ccc;
+                --black: #000000;
+                --dark: #615c60;
+                --themeColor: #22b8d1;
+                --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+            }
+
+            /* Font Include */
+            @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
+
+            body {
+                background-color: var(--body-bg);
+            }
+
+            .page {
+                background: var(--white);
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                box-shadow: var(--pageShadow);
+            }
+
+            .page[size="A4"] {
+                width: 21cm;
+                height: 29.7cm;
+                overflow: hidden;
+            }
+
+            .bb {
+                border-bottom: 3px solid var(--darkWhite);
+            }
+
+            .top-left .graphic-path {
+                height: 40px;
+                position: relative;
+            }
+
+            .top-left .graphic-path::before {
+                content: "";
+                height: 20px;
+                background-color: var(--dark);
+                position: absolute;
+                left: 15px;
+                right: 0;
+                top: -15px;
+                z-index: 2;
+            }
+
+            .top-left .graphic-path::after {
+                content: "";
+                height: 22px;
+                width: 17px;
+                background: var(--black);
+                position: absolute;
+                top: -13px;
+                left: 6px;
+                transform: rotate(45deg);
+            }
+
+            .date {
+                padding-top: 10px;
+                padding-right: 10px;
+                font-weight: 600;
+                font-size: 20px;
+                width: 100%;
+                border: 2px solid;
+            }
+            /* User Store Section */
+            .store-user {
+                padding-bottom: 20px;
+            }
+
+            .store-user {
+                margin: 0;
+                font-size: 15px;
+
+                /* font-weight: 400; */
+            }
+
+            .store-user .address {
+                /* font-weight: 400; */
+                font-size: 15px;
+            }
+
+            .store-user h2 {
+                color: var(--themeColor);
+                font-family: "Rajdhani", sans-serif;
+            }
+
+            .Header-konten,
+            .tabel-header,
+            thead {
+                border: 1px solid;
+                width: 100%;
+                border: 1px solid;
+                /* vertical-align: middle; */
+            }
+            .header,
+            td {
+                padding-left: 6px;
+                height: auto;
+                border: 1px solid;
+                text-align: left;
+            }
+            .Header-konten,
+            td,
+            tr {
+                text-align: left;
+                border: 1px solid;
+            }
+            .spasi {
+                width: 100%;
+                border: 2px solid;
+                height: 5px;
+            }
+            .Nomor-surat {
+                border: 2px solid;
+                width: 100%;
+                border: 1px solid;
+            }
+            .list-purchase {
+                width: 100%;
+                border: 2px solid;
+            }
+            .list-purchase,
+            thead,
+            tr {
+                border: 2px solid;
+            }
+
+            .CVNPWP {
+                padding-left: 0;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="my-5 page" size="A4">
+            <div class="p-4">
+                <section class="date">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-8" style="text-align: center">
+                                <p>SURAT JALAN</p>
+                            </div>
+                            <div class="COL-4" style="text-align: right">
+                                <p>Tanggal : 2 Desember 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <table class="spasi">
+                        <thead>
+                            <td class="spasi"></td>
+                        </thead>
+                    </table>
+                </section>
+
+                <section class="Header-konten">
+                    <table class="tabel-header">
+                        <thead>
+                            <tr class="header">
+                                <td colspan="2">
+                                    <h5>PT. CIDIGI MULTI INOVASI</h5>
+                                    Jl. Dr. Cipto Mangun Kusumo B23 No.66
+                                    <br />
+                                    Ruko Cortez Simpangan, Cikarang Utara
+                                    Bekasi,
+                                    <br />
+                                    No. Telp / Fax : 0812277777597
+                                </td>
+                                <td colspan="2">
+                                    Yth : Mr. Slamet Widada
+                                    <h6>
+                                        Ruko Villa Mutiaraa Blok R2 No. 16 & 17
+                                    </h6>
+                                    Ciantara, Cikarang Selatan, Bekasi
+                                    <br />
+                                    No. Telp / Fax : 02189901168 / 02189901498
+                                </td>
+                            </tr>
+                            <tr></tr>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <table class="spasi">
+                        <thead>
+                            <td class="spasi"></td>
+                        </thead>
+                    </table>
+                </section>
+                <section class="Nomor-surat">
+                    <table class="Nomor-surat">
+                        <thead>
+                            <tr class="header">
+                                <td colspan="2">
+                                    <h6>Nomor Surat Jalan : YM-CMI/2021-001</h6>
+                                </td>
+
+                                <td colspan="2">
+                                    <h6>Nomor PO : YM-CMI/2021-001</h6>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <table class="spasi">
+                        <thead>
+                            <td class="spasi"></td>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <table class="spasi">
+                        <thead>
+                            <td class="spasi">
+                                <p class="pt-2">
+                                    Kami kirimkan barang-barang tersebut dibawah
+                                    ini dengan kendaraan:
+                                </p>
+                            </td>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <table class="list-purchase">
+                        <thead>
+                            <tr>
+                                <td>No</td>
+                                <td style="width: 400px">Nama Barang</td>
+                                <td>Jumlah</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Order Jig Stopper X01</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section><br /></section>
+
+                <section>
+                    <br />
+                    <br />
+                </section>
+                <section class="pt-3">
+                    <div class="row pt-10" style="font-weight: 500">
+                        <div class="col-4" style="text-align: center">
+                            <div class="col-12 mb-10">
+                                <p>Dibuat Oleh,</p>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-12 mt-10">
+                                <p>(....................................)</p>
+                            </div>
+                        </div>
+                        <div class="col-4" style="text-align: center">
+                            <div class="col-12 mb-10"><p>Dikirim Oleh,</p></div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-12 mt-10">
+                                <p>(....................................)</p>
+                            </div>
+                        </div>
+                        <div class="col-4" style="text-align: center">
+                            <div class="col-12 mb-10">
+                                <p>Diterima Oleh,</p>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-12 mt-10">
+                                <p>(....................................)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

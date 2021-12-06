@@ -1,0 +1,152 @@
+:root {
+    --body-bg: rgb(204, 204, 204);
+    --white: #ffffff;
+    --darkWhite: #ccc;
+    --black: #000000;
+    --dark: #615c60;
+    --themeColor: #22b8d1;
+    --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+/* Font Include */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
+
+body {
+    background-color: var(--body-bg);
+}
+
+.page {
+    background: var(--white);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--pageShadow);
+}
+
+.page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+    overflow: hidden;
+}
+
+.bb {
+    border-bottom: 3px solid var(--darkWhite);
+}
+
+/* Top Section */
+.top-content {
+    padding-bottom: 15px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.top-left p {
+    margin: 0;
+}
+
+.top-left .graphic-path {
+    height: 40px;
+    position: relative;
+}
+
+.top-left .graphic-path::before {
+    content: "";
+    height: 20px;
+    background-color: var(--dark);
+    position: absolute;
+    left: 15px;
+    right: 0;
+    top: -15px;
+    z-index: 2;
+}
+
+.top-left .graphic-path::after {
+    content: "";
+    height: 22px;
+    width: 17px;
+    background: var(--black);
+    position: absolute;
+    top: -13px;
+    left: 6px;
+    transform: rotate(45deg);
+}
+
+/* .top-left .graphic-path p {
+    color: var(--white);
+    height: 40px;
+    left: 0;
+    right: -100px;
+    text-transform: uppercase;
+    background-color: var(--themeColor);
+    font: 26px;
+    z-index: 3;
+    position: absolute;
+    padding-left: 10px;
+} */
+
+/* User Store Section */
+.store-user {
+    padding-bottom: 20px;
+}
+
+.store-user p {
+    margin: 0;
+    font-size: 15px;
+
+    /* font-weight: 400; */
+}
+
+.store-user .address {
+    /* font-weight: 400; */
+    font-size: 15px;
+}
+
+.store-user h2 {
+    color: var(--themeColor);
+    font-family: "Rajdhani", sans-serif;
+}
+
+.extra-info p span {
+    font-weight: 400;
+}
+
+.Header-konten,
+.tabel-header,
+thead {
+    border: 1px solid;
+    width: 100%;
+    border: 1px solid;
+    vertical-align: middle;
+}
+.header,
+td {
+    border: 1px solid;
+    text-align: center;
+}
+.Header-konten,
+td,
+tr {
+    text-align: center;
+    border: 1px solid;
+}
+.spasi {
+    width: 100%;
+    border: 1px solid;
+    height: 10px;
+}
+.list-purchase {
+    width: 100%;
+    border: 1px solid;
+}
+.list-purchase,
+thead,
+tr {
+    border: 1px solid;
+}
+
+.CVNPWP {
+    padding-left: 0;
+    font-weight: 500;
+}
